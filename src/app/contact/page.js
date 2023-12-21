@@ -1,10 +1,10 @@
 import DefaultLayout from '@/layouts/DefaultLayout';
 
-export default function Home() {
+export default function ContactPage() {
   return (
     <div>
       <DefaultLayout>
-        <h1>Hello</h1>
+        <h1>Contact</h1>
       </DefaultLayout>
     </div>
   );
