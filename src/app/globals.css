@@ -4,7 +4,7 @@
 
 @layer base {
   h1 {
-    @apply text-3xl font-semibold text-teal-400;
+    @apply text-5xl font-semibold uppercase text-teal-400;
   }
 }
 
@@ -30,5 +30,9 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-  font-family: var(--font-nunito);
+  font-family: var(--font-space-grotesk);
+}
+
+.ficon:hover path {
+  fill: #2dd4bf;
 }

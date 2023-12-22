@@ -2,9 +2,11 @@ import DefaultLayout from '@/layouts/DefaultLayout';
 
 export default function AboutPage() {
   return (
-    <div>
+    <div className="p-8 container max-w-7xl mx-auto">
       <DefaultLayout>
-        <h1>About</h1>
+        <section className="h-screen py-32 relative">
+          <h1>About</h1>
+        </section>
       </DefaultLayout>
     </div>
   );

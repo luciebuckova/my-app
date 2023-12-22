@@ -1,11 +1,11 @@
-import { Nunito_Sans } from 'next/font/google';
+import { Space_Grotesk } from 'next/font/google';
 import './globals.css';
 
-const nunito = Nunito_Sans({
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-nunito',
-  weight: ['200', '300', '400', '500', '600', '700', '800', '900', '1000'],
+  variable: '--font-space-grotesk',
+  weight: ['300', '400', '500', '600', '700'],
 });
 
 export const metadata = {
@@ -16,7 +16,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${nunito.variable}`}>{children}</body>
+      <body
+        className={`bg-[url('/rrreflection.svg')] bg-cover ${spaceGrotesk.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
