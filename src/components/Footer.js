@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <div className="flex flex-col-reverse gap-6 md:flex-row justify-between items-center text-center md:text-left">
       <div>
-        <p>&copy; 2023 My App</p>
+        <p>&copy; 2023 Lucie Bučková</p>
       </div>
       <ul className="flex items-center gap-4">
         <li className="group">

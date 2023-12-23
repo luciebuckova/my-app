@@ -5,7 +5,7 @@ export default function DefaultLayout({ children }) {
   return (
     <div>
       <Header />
-      <main className="text-center md:text-left">{children}</main>
+      <main className="text-center">{children}</main>
       <Footer />
     </div>
   );

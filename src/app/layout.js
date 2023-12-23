@@ -16,10 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`bg-[url('/rrreflection.svg')] bg-cover ${spaceGrotesk.variable}`}>
-        {children}
-      </body>
+      <body className={`${spaceGrotesk.variable}`}>{children}</body>
     </html>
   );
 }
