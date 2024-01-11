@@ -11,7 +11,7 @@
 body {
   color: white;
   background: black;
-  background-image: url('/rrreflection.svg');
+  background-image: url("/rrreflection.svg");
   background-size: cover;
   font-family: var(--font-space-grotesk);
 }

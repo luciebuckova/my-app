@@ -1,8 +1,11 @@
+const date = new Date();
+let year = date.getFullYear();
+
 export default function Footer() {
   return (
     <footer className="flex flex-col-reverse items-center justify-between gap-6 text-center md:flex-row md:text-left">
       <div>
-        <p>&copy; 2023 Lucie Bučková</p>
+        <p>&copy; 2023 - {year} Lucie Bučková</p>
       </div>
       <ul className="flex items-center gap-4">
         <li className="group">
