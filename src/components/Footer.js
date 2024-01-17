@@ -16,7 +16,7 @@ function SocialIcon({ children, link }) {
 export default function Footer() {
   return (
     <footer className="flex flex-col-reverse items-center justify-between gap-6 text-center md:flex-row md:text-left">
-      <div>
+      <div className="z-50">
         <p>&copy; 2023 - {year} Lucie Bučková</p>
       </div>
       <ul className="flex items-center gap-4">

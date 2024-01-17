@@ -53,7 +53,7 @@ export default function Hero() {
         transition={{ type: "spring", duration: 1, delay: 1.5 }}
       >
         <Link
-          className="rounded-full border border-purple-600 px-4 py-2 text-xl font-light text-purple-600 duration-500 hover:bg-purple-600 hover:text-white md:text-2xl"
+          className="rounded-full border border-purple-600 px-4 py-2 text-xl font-light text-purple-600 duration-500 hover:bg-purple-600 hover:text-neutral-50 md:text-2xl"
           href="#contact"
         >
           Napište mi

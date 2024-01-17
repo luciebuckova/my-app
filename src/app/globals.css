@@ -9,7 +9,9 @@
 }
 
 body {
-  background-image: url("/rrreflection.svg");
-  background-size: contain;
+  background-image: url("/ssscribble.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-family: var(--font-space-grotesk);
 }

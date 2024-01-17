@@ -33,7 +33,7 @@ export default function Header() {
       <Link onClick={() => setShowNav(false)} href={item.url}>
         {item.title}
       </Link>
-      <div className="mx-2 mt-2 border-b-2  border-purple-600 opacity-0 duration-500 group-hover:opacity-100"></div>
+      <div className="mx-2 mt-2 border-b-2  border-teal-400 opacity-0 duration-500 group-hover:opacity-100"></div>
     </li>
   ));
 
@@ -46,7 +46,7 @@ export default function Header() {
         <IconMenuDeep size={40} />
       </button>
       {showNav && (
-        <nav className="fixed right-0 top-0 z-30 flex h-full w-72 items-start justify-center bg-gradient-to-b from-neutral-50 to-transparent px-5 py-20 text-center text-xl font-light md:text-2xl dark:from-neutral-950 dark:to-transparent">
+        <nav className="fixed right-0 top-0 z-30 flex h-full w-64 items-start justify-center bg-gradient-to-b from-teal-950 to-purple-950 px-6 pt-24 text-center text-xl font-light">
           <button
             className="absolute right-8 top-8"
             onClick={() => setShowNav(false)}
