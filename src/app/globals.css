@@ -9,5 +9,7 @@
 }
 
 body {
+  background-image: url("/rrreflection.svg");
+  background-size: contain;
   font-family: var(--font-space-grotesk);
 }
