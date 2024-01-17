@@ -9,18 +9,5 @@
 }
 
 body {
-  color: white;
-  background: black;
-  background-image: url("/rrreflection.svg");
-  background-size: cover;
   font-family: var(--font-space-grotesk);
-}
-
-.active {
-  font-weight: 500;
-  color: #2dd4bf;
-}
-
-.ficon:hover path {
-  fill: #2dd4bf;
 }

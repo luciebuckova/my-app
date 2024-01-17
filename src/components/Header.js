@@ -5,22 +5,22 @@ const menu = [
   {
     id: 0,
     title: "Úvod",
-    url: "/",
+    url: "#hero",
   },
   {
     id: 1,
     title: "O mně",
-    url: "/about",
+    url: "#about",
   },
   {
     id: 2,
     title: "Projekty",
-    url: "/projects",
+    url: "#projects",
   },
   {
     id: 3,
     title: "Kontakt",
-    url: "/contact",
+    url: "#contact",
   },
 ];
 
@@ -28,9 +28,7 @@ export default function Header() {
   const pathname = usePathname();
   const menuItems = menu.map((item) => (
     <li key={item.id} className="group">
-      <Link href={item.url} className={pathname === item.url ? "active" : ""}>
-        {item.title}
-      </Link>
+      <Link href={item.url}>{item.title}</Link>
       <div className="mx-2 mt-2 border-b-2 border-teal-400 opacity-0 duration-500 group-hover:opacity-100"></div>
     </li>
   ));
