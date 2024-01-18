@@ -2,6 +2,7 @@ import Link from "next/link";
 import { IconX } from "@tabler/icons-react";
 import { IconMenuDeep } from "@tabler/icons-react";
 import { useState } from "react";
+import UseSwitchesCustom from "./UseSwitchesCustom";
 
 const menu = [
   {
@@ -26,7 +27,7 @@ const menu = [
   },
 ];
 
-export default function Header() {
+export default function Header({ toggleMode }) {
   const [showNav, setShowNav] = useState(false);
   const menuItems = menu.map((item) => (
     <li key={item.id} className="group">
@@ -38,17 +39,18 @@ export default function Header() {
   ));
 
   return (
-    <header>
+    <header className="grid place-content-center">
+      <UseSwitchesCustom />
       <button
-        className="fixed right-8 top-8 z-20"
+        className="fixed right-8 top-8 z-20 flex items-center justify-center rounded-md border border-neutral-500 bg-neutral-50 p-2 duration-500 hover:scale-105 hover:bg-teal-100 dark:bg-neutral-950 dark:hover:bg-teal-950"
         onClick={() => setShowNav(true)}
       >
-        <IconMenuDeep size={40} />
+        <IconMenuDeep size={24} />
       </button>
       {showNav && (
-        <nav className="fixed right-0 top-0 z-30 flex h-full w-64 items-start justify-center bg-gradient-to-b from-teal-950 to-purple-950 px-6 pt-24 text-center text-xl font-light">
+        <nav className="fixed right-0 top-0 z-30 flex h-full w-64 items-start justify-center bg-gradient-to-b from-teal-100 to-purple-100 px-6 pt-24 text-center text-xl font-light dark:from-teal-950 dark:to-purple-950">
           <button
-            className="absolute right-8 top-8"
+            className="absolute right-8 top-8 duration-500 hover:scale-95"
             onClick={() => setShowNav(false)}
           >
             <IconX size={40} />
