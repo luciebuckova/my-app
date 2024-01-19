@@ -15,3 +15,8 @@ body {
   background-repeat: no-repeat;
   font-family: var(--font-space-grotesk);
 }
+
+.active {
+  color: magenta;
+  font-weight: 400;
+}

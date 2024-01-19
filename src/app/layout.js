@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
 
   return (
     <ModeContext.Provider value={toggleMode}>
-      <html lang="en" className={`${mode} scroll-smooth`}>
+      <html lang="en" className={mode}>
         <body
           className={`${spaceGrotesk.variable} bg-neutral-50 text-neutral-950 dark:bg-neutral-950 dark:text-neutral-50`}
         >
