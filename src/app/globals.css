@@ -17,6 +17,7 @@ body {
 }
 
 .active {
-  color: magenta;
+  color: #a855f7;
   font-weight: 400;
+  text-transform: uppercase;
 }

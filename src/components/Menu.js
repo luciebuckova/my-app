@@ -1,11 +1,7 @@
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import { IconX } from "@tabler/icons-react";
 
 export default function Menu({ setShowNav }) {
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
-
   return (
     <nav className="fixed right-0 top-0 z-30 flex h-full w-64 items-start justify-center bg-gradient-to-b from-teal-100 to-purple-100 px-6 pt-24 text-center text-xl font-light dark:from-teal-950 dark:to-purple-950">
       <button
@@ -16,14 +12,16 @@ export default function Menu({ setShowNav }) {
       </button>
       <ul className="flex flex-col gap-6">
         <li className="group cursor-pointer">
-          <button
-            onClick={() => {
-              scrollToTop();
-              setShowNav(false);
-            }}
+          <ScrollLink
+            activeClass="active"
+            spy={true}
+            to="hero"
+            smooth={true}
+            duration={800}
+            onClick={() => setShowNav(false)}
           >
             Úvod
-          </button>
+          </ScrollLink>
           <div className="mx-2 mt-2 border-b-2  border-teal-400 opacity-0 duration-500 group-hover:opacity-100"></div>
         </li>
         <li className="group cursor-pointer">

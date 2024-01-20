@@ -15,10 +15,7 @@ function SocialIcon({ children, link }) {
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col-reverse items-center justify-between gap-6 text-center md:flex-row md:text-left">
-      <div className="z-50">
-        <p>&copy; 2023 - {year} Lucie Bučková</p>
-      </div>
+    <footer className="flex flex-col items-center justify-between gap-6 text-center">
       <ul className="flex items-center gap-4">
         <SocialIcon link="https://github.com/luciebuckova">
           <IconBrandGithub />
@@ -30,6 +27,9 @@ export default function Footer() {
           <IconBrandFacebook />
         </SocialIcon>
       </ul>
+      <div>
+        <p>&copy; 2023 - {year} Lucie Bučková</p>
+      </div>
     </footer>
   );
 }

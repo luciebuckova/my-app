@@ -1,8 +1,12 @@
 import { Element, Link as ScrollLink } from "react-scroll";
+import UseSwitchesCustom from "@/components/UseSwitchesCustom";
 
 export default function Hero() {
   return (
     <Element name="hero" className="relative min-h-screen py-32">
+      <div className="absolute left-1/2 top-8 -translate-x-[50%]">
+        <UseSwitchesCustom />
+      </div>
       <h1>Lucie Bučková</h1>
       <h2 className="text-3xl font-medium">frontend kodérka</h2>
       <p className="mx-auto my-8 max-w-3xl text-xl font-light leading-8 md:text-2xl">
