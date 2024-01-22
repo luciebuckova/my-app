@@ -28,7 +28,7 @@ export default function Footer() {
         </SocialIcon>
       </ul>
       <div>
-        <p>&copy; 2023 - {year} Lucie Bučková</p>
+        <span>&copy; 2023 - {year} Lucie Bučková</span>
       </div>
     </footer>
   );

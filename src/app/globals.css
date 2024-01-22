@@ -6,18 +6,19 @@
   h1 {
     @apply text-5xl font-semibold uppercase text-teal-400;
   }
+  p {
+    @apply mx-auto my-8 max-w-3xl text-xl font-light leading-8 md:text-2xl;
+  }
 }
 
-body {
-  background-image: url("/ssscribble.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-family: var(--font-space-grotesk);
-}
-
-.active {
-  color: #a855f7;
-  font-weight: 400;
-  text-transform: uppercase;
+@layer components {
+  .active {
+    @apply font-normal uppercase text-purple-500;
+  }
+  .btn-primary {
+    @apply rounded-xl border border-purple-600  bg-purple-600 px-4 py-2 text-xl font-light text-neutral-50 duration-500 hover:border-purple-800 hover:bg-purple-800 hover:shadow-xl dark:hover:border-purple-800 dark:hover:bg-purple-800 md:text-2xl;
+  }
+  .btn-secondary {
+    @apply rounded-xl border border-teal-400 bg-neutral-50 px-4 py-2 text-xl font-light text-teal-400 duration-500 hover:border-teal-400 hover:bg-teal-400 hover:text-neutral-50 hover:shadow-xl dark:bg-neutral-950 dark:hover:border-teal-600 dark:hover:bg-teal-600 md:text-2xl;
+  }
 }

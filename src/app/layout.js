@@ -7,7 +7,6 @@ import { useState } from "react";
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-space-grotesk",
   weight: ["300", "400", "500", "600", "700"],
 });
 
@@ -24,7 +23,7 @@ export default function RootLayout({ children }) {
     <ModeContext.Provider value={toggleMode}>
       <html lang="en" className={mode}>
         <body
-          className={`${spaceGrotesk.variable} bg-neutral-50 text-neutral-950 dark:bg-neutral-950 dark:text-neutral-50`}
+          className={`${spaceGrotesk.className} bg-neutral-50 bg-[url('/ssscribble.svg')] bg-cover bg-center bg-no-repeat text-neutral-950 dark:bg-neutral-950 dark:text-neutral-50`}
         >
           {children}
         </body>
