@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
+  h1,
+  h2 {
     @apply text-5xl font-semibold uppercase text-teal-400;
+  }
+  h3 {
+    @apply text-3xl font-medium;
   }
   p {
     @apply mx-auto my-8 max-w-3xl text-xl font-light leading-8 md:text-2xl;

@@ -10,7 +10,7 @@ export default function Hero() {
         <UseSwitchesCustom />
       </div>
       <h1>Lucie Bučková</h1>
-      <h2 className="text-3xl font-medium">frontend kodérka</h2>
+      <h3>frontend kodérka</h3>
       <ul className="my-4 grid place-content-center">
         <SocialIcon link="https://github.com/luciebuckova">
           <IconBrandGithub />
