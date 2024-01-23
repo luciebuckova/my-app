@@ -1,5 +1,7 @@
 import { Element, Link as ScrollLink } from "react-scroll";
 import UseSwitchesCustom from "@/components/UseSwitchesCustom";
+import { IconBrandGithub } from "@tabler/icons-react";
+import SocialIcon from "@/components/SocialIcon";
 
 export default function Hero() {
   return (
@@ -9,10 +11,15 @@ export default function Hero() {
       </div>
       <h1>Lucie Bučková</h1>
       <h2 className="text-3xl font-medium">frontend kodérka</h2>
+      <ul className="my-4 grid place-content-center">
+        <SocialIcon link="https://github.com/luciebuckova">
+          <IconBrandGithub />
+        </SocialIcon>
+      </ul>
       <p>
-        Naději k je polohách by dotkne část. Víc terčem už dobrodruzi, ne mé
-        hloupé k souvislosti přepravy, už špatného změnami dálný, buňky by
-        skutečně indickým, petr začaly východě.
+        Jsem junior frontend kodérka. Zamilovala jsem si zejména tvorbu webů
+        kombinací React a Tailwind CSS. Neustále na sobě pracuji a&nbsp;snažím
+        se nejen v tomto směru posouvat vpřed.
       </p>
       <div className="mx-auto flex max-w-sm flex-col justify-center gap-8 sm:flex-row">
         <ScrollLink
@@ -31,7 +38,7 @@ export default function Hero() {
           className="btn-secondary sm:w-1/2"
           href="#about"
         >
-          O mně
+          Více o mně
         </ScrollLink>
       </div>
     </Element>
