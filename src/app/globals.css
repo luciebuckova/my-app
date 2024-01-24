@@ -11,7 +11,10 @@
     @apply text-3xl font-medium;
   }
   p {
-    @apply mx-auto my-8 max-w-3xl text-xl font-light leading-8 md:text-2xl;
+    @apply mx-auto my-8 max-w-3xl text-lg font-light leading-8 md:text-xl;
+  }
+  strong {
+    @apply font-medium text-purple-600 dark:text-purple-300;
   }
 }
 

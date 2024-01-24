@@ -11,13 +11,13 @@ export default function Footer() {
     <footer className="flex flex-col items-center justify-between gap-6 text-center">
       <ul className="flex items-center gap-4">
         <SocialIcon link="https://github.com/luciebuckova">
-          <IconBrandGithub />
+          <IconBrandGithub size={28} stroke={1} />
         </SocialIcon>
         <SocialIcon link="https://www.linkedin.com/in/luciebuckova/">
-          <IconBrandLinkedin />
+          <IconBrandLinkedin size={28} stroke={1} />
         </SocialIcon>
         <SocialIcon link="https://www.facebook.com/l.lucie.b">
-          <IconBrandFacebook />
+          <IconBrandFacebook size={28} stroke={1} />
         </SocialIcon>
       </ul>
       <div>
