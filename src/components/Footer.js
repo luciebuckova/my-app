@@ -8,7 +8,7 @@ let year = date.getFullYear();
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col items-center justify-between gap-6 text-center">
+    <footer className="flex flex-col items-center justify-between gap-6 pb-8 text-center">
       <ul className="flex items-center gap-4">
         <SocialIcon link="https://github.com/luciebuckova">
           <IconBrandGithub size={28} stroke={1} />

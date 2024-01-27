@@ -3,7 +3,7 @@ import Card from "@/components/Card";
 
 export default function Projects() {
   return (
-    <Element name="projects" className="relative py-32">
+    <Element name="projects" className="min-h-screen py-32">
       <h2>Projekty</h2>
       <p>Na této sekci právě pracuji... 🚧</p>
       {/* <ul className="mt-8 grid gap-8 md:grid-cols-3">

@@ -1,18 +1,11 @@
 import { Element, Link as ScrollLink } from "react-scroll";
-import UseSwitchesCustom from "@/components/UseSwitchesCustom";
 import { IconBrandGithub } from "@tabler/icons-react";
 import SocialIcon from "@/components/SocialIcon";
 import Image from "next/image";
 
 export default function Hero() {
   return (
-    <Element
-      name="hero"
-      className="relative flex min-h-screen items-center justify-center"
-    >
-      <div className="absolute left-1/2 top-8 -translate-x-[50%]">
-        <UseSwitchesCustom />
-      </div>
+    <Element name="hero" className="min-h-screen py-32">
       <section>
         <Image
           priority={true}

@@ -12,7 +12,7 @@ import { IconBrandGit } from "@tabler/icons-react";
 
 export default function About() {
   return (
-    <Element name="about" className="relative py-32">
+    <Element name="about" className="min-h-screen py-32">
       <h2>O mně</h2>
       <p>
         Vystudovala jsem obor zubní lékařství, což v mém případě byl ale krok
