@@ -32,7 +32,7 @@ export default function About() {
         HTML a CSS. Znám obecně nejpoužívanější metodiku BEM a umím používat
         preprocesor <strong>Sass</strong>. Od té doby, co jsem poznala Tailwind
         CSS, všek obojí zmiňované používám méně. Zvládám základní práci s Gitem
-        a zvládám také tvorbu jednodušší grafiky, ať už jde o návrh webu ve{" "}
+        a také tvorbu jednodušší grafiky, ať už jde o návrh webu ve{" "}
         <strong>Figmě</strong> nebo úpravy grafických podkladů v Adobe
         Photoshop.
       </p>

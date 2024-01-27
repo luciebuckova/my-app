@@ -2,11 +2,14 @@ import { Link as ScrollLink } from "react-scroll";
 import { IconX } from "@tabler/icons-react";
 
 export default function Menu({ setShowNav }) {
+  function closeMenu() {
+    setShowNav(false);
+  }
   return (
     <nav className="fixed right-0 top-0 z-30 flex h-full w-64 items-start justify-center bg-gradient-to-b from-teal-100 to-purple-100 px-6 pt-24 text-center text-xl font-light dark:from-teal-950 dark:to-purple-950">
       <button
         className="absolute right-8 top-8 duration-300 hover:scale-95 hover:text-teal-400"
-        onClick={() => setShowNav(false)}
+        onClick={closeMenu}
       >
         <IconX size={40} stroke={1} />
       </button>
@@ -18,7 +21,7 @@ export default function Menu({ setShowNav }) {
             to="hero"
             smooth={true}
             duration={800}
-            onClick={() => setShowNav(false)}
+            onClick={closeMenu}
           >
             Úvod
           </ScrollLink>
@@ -31,7 +34,7 @@ export default function Menu({ setShowNav }) {
             to="about"
             smooth={true}
             duration={800}
-            onClick={() => setShowNav(false)}
+            onClick={closeMenu}
           >
             O mně
           </ScrollLink>
@@ -44,7 +47,7 @@ export default function Menu({ setShowNav }) {
             to="projects"
             smooth={true}
             duration={800}
-            onClick={() => setShowNav(false)}
+            onClick={closeMenu}
           >
             Projekty
           </ScrollLink>
@@ -57,7 +60,7 @@ export default function Menu({ setShowNav }) {
             to="contact"
             smooth={true}
             duration={800}
-            onClick={() => setShowNav(false)}
+            onClick={closeMenu}
           >
             Kontakt
           </ScrollLink>

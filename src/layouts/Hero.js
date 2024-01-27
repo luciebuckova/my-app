@@ -8,14 +8,14 @@ export default function Hero() {
   return (
     <Element
       name="hero"
-      className="relative flex min-h-screen items-center justify-center py-32"
+      className="relative flex min-h-screen items-center justify-center"
     >
       <div className="absolute left-1/2 top-8 -translate-x-[50%]">
         <UseSwitchesCustom />
       </div>
       <section>
         <Image
-          priority={false}
+          priority={true}
           src="/ccclaymoji.svg"
           width={350}
           height={350}

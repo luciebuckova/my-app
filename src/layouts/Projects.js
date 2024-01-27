@@ -5,7 +5,8 @@ export default function Projects() {
   return (
     <Element name="projects" className="relative py-32">
       <h2>Projekty</h2>
-      <ul className="mt-8 grid gap-8 md:grid-cols-3">
+      <p>Na této sekci právě pracuji... 🚧</p>
+      {/* <ul className="mt-8 grid gap-8 md:grid-cols-3">
         <li>
           <Card front={<p>Projekt 1</p>} back={<p>popis</p>} />
         </li>
@@ -24,7 +25,7 @@ export default function Projects() {
         <li>
           <Card front={<p>Projekt 6</p>} back={<p>popis</p>} />
         </li>
-      </ul>
+      </ul> */}
     </Element>
   );
 }
