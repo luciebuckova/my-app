@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <Element name="hero" className="min-h-screen py-32">
+    <Element name="hero" className="min-h-screen py-8 md:py-32">
       <section>
         <Image
           priority={true}
