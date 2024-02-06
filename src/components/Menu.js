@@ -3,7 +3,7 @@ import UseSwitchesCustom from "@/components/UseSwitchesCustom";
 
 export default function Menu() {
   return (
-    <nav className="fixed left-0 right-0 top-0  py-8 text-center text-xl font-light backdrop-blur-lg">
+    <nav className="fixed left-0 right-0 top-0 py-4 text-center text-xl font-light backdrop-blur-lg">
       <ul className="mx-auto flex max-w-7xl items-center justify-center gap-6">
         <li className="group cursor-pointer">
           <ScrollLink

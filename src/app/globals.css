@@ -10,6 +10,9 @@
   h3 {
     @apply text-3xl font-medium;
   }
+  h4 {
+    @apply text-2xl font-medium;
+  }
   p {
     @apply mx-auto my-8 max-w-3xl text-lg font-light leading-8 md:text-xl;
   }

@@ -6,26 +6,32 @@ export default function Projects() {
     <Element name="projects" className="min-h-screen py-8 md:py-32">
       <h2>Projekty</h2>
       <p>Na této sekci právě pracuji... 🚧</p>
-      {/* <ul className="mt-8 grid gap-8 md:grid-cols-3">
+      <ul className="mt-8 grid gap-8 sm:grid-cols-2 md:grid-cols-3">
         <li>
-          <Card front={<p>Projekt 1</p>} back={<p>popis</p>} />
+          <Card
+            title="Závěrečný projekt kurzu Staň se kodérkou"
+            bg="bg-[url('/rtb.webp')]"
+            linkWeb="https://rtb-race.netlify.app/"
+            linkRepo="https://github.com/luciebuckova/final-project"
+          />
         </li>
         <li>
-          <Card front={<p>Projekt 2</p>} back={<p>popis</p>} />
+          <Card
+            title="Hodinová nemanželka"
+            bg="bg-[url('/nemanzelka.webp')]"
+            linkWeb="https://hodinova-nemanzelka.cz/"
+            linkRepo="https://github.com/luciebuckova/nemanzelka"
+          />
         </li>
         <li>
-          <Card front={<p>Projekt 3</p>} back={<p>popis</p>} />
+          <Card
+            title="Simon Game"
+            bg="bg-[url('/simon-game.webp')]"
+            linkWeb="https://luciebuckova.github.io/simon-game/"
+            linkRepo="https://github.com/luciebuckova/simon-game"
+          />
         </li>
-        <li>
-          <Card front={<p>Projekt 4</p>} back={<p>popis</p>} />
-        </li>
-        <li>
-          <Card front={<p>Projekt 5</p>} back={<p>popis</p>} />
-        </li>
-        <li>
-          <Card front={<p>Projekt 6</p>} back={<p>popis</p>} />
-        </li>
-      </ul> */}
+      </ul>
     </Element>
   );
 }
