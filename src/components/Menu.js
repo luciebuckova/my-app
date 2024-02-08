@@ -5,7 +5,7 @@ export default function Menu() {
   return (
     <nav className="fixed left-0 right-0 top-0 z-50 py-4 text-center text-xl font-light backdrop-blur-lg">
       <ul className="mx-auto flex max-w-7xl items-center justify-center gap-6">
-        <li className="group cursor-pointer">
+        <li className="group">
           <ScrollLink
             activeClass="active"
             spy={true}
@@ -17,7 +17,7 @@ export default function Menu() {
           </ScrollLink>
           <div className="mx-2 mt-2 border-b-2  border-teal-400 opacity-0 duration-500 group-hover:opacity-100"></div>
         </li>
-        <li className="group cursor-pointer">
+        <li className="group">
           <ScrollLink
             activeClass="active"
             spy={true}
@@ -29,7 +29,7 @@ export default function Menu() {
           </ScrollLink>
           <div className="mx-2 mt-2 border-b-2  border-teal-400 opacity-0 duration-500 group-hover:opacity-100"></div>
         </li>
-        <li className="group cursor-pointer">
+        <li className="group">
           <ScrollLink
             activeClass="active"
             spy={true}
@@ -41,7 +41,7 @@ export default function Menu() {
           </ScrollLink>
           <div className="mx-2 mt-2 border-b-2  border-teal-400 opacity-0 duration-500 group-hover:opacity-100"></div>
         </li>
-        <li className="group cursor-pointer">
+        <li className="group">
           <ScrollLink
             activeClass="active"
             spy={true}
